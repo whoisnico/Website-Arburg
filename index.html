@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>ARBURG Homepage</title>
+        <link rel="stylesheet" href="resources/style.css">
+        
+    </head>
+
+    <body>
+        
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    
+        // Der Button wird mit JavaScript erzeugt und vor dem Ende des body eingebunden.
+        var back_to_top_button = ['<a href="#top" class="back-to-top">Nach oben</a>'].join("");
+        $("body").append(back_to_top_button)
+    
+        // Der Button wird ausgeblendet
+        $(".back-to-top").hide();
+    
+        // Funktion für das Scroll-Verhalten
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) { // Wenn 100 Pixel gescrolled wurde
+                    $('.back-to-top').fadeIn();
+                } else {
+                    $('.back-to-top').fadeOut();
+                }
+            });
+    
+            $('.back-to-top').click(function () { // Klick auf den Button
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+    
+    });
+    </script>
+
+
+        <nav class="sidebar">
+            <a href="#", class="logo">ARBURG</a>
+
+            <div class="menu-content">
+                <u class="menu-items">
+            
+
+                <li class="item">
+                    <a>Homepage</a>
+                    <a href="./history/index.html">Geschichte</a>
+                    <a href="./facts/index.html">Über uns</a> 
+                    <a href="./contact/index.html">Kontakt</a>
+                </li>
+                </u>
+            </div>
+        </nav>
+        <div class="fade-in">
+        
+        <div class="logocenter">
+            <img src="pictures/logo_white.png" alt="logo_white">
+        </div>
+        <img src="pictures/allrounder.png" class="allrounder" align="left" vspace="40" hspace="150" style="float: left;">
+        <p style="margin-top: 100px; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">Verlassen Sie sich auf das Beste der Spritzgießtechnik: Unser modulares Produktprogramm umfasst hydraulische, hybride und elektrische Spritzgusstechnik – von konsequent standardisierten Einstiegsmodellen bis zur individuell angepassten Maschine. Vom Kraftpaket bis zum Schnellläufer. Unsere ALLROUNDER machen alles möglich</p>
+
+        <img src="pictures/freeformer.png" class="allrounder" align="right" vspace="40" hspace="0" style="float: right;">
+        <p style="margin-top: 260px; margin-left: 190px; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">3D-Druck ganz individuell – die ARBURGadditive Gruppe bietet dazu freeformer von ARBURG und 3D-Drucker von innovatiQ. Und dazu die Technologien ARBURG Kunststoff-Freiformen (AKF), Fused Filament Fabrication (FFF) und Liquid Additive Manufacturing (LAM).</p>
+    </div>
+    </body>
+    <footer> <a href="file:///C:/Users/ITP01/Desktop/website/contact/index.html">Kontakt</a>
+        <a href="file:///C:/Users/ITP01/Desktop/website/games/snake.html#">Impresum</a>
+        <a href="https://www.arburg.com/de/de/datenschutz/">Datenschutz</a>
+        <p>© 2023 by Nico</p>
+    </footer>
+</html>

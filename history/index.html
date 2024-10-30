@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        (function () {
+            const waitBefore = 2500;
+            const waitAfter = 100000000000;
+            const step = 3;
+            function scroll() {
+                var position = window.pageYOffset;
+                window.scrollBy(0, step);
+                if (position === window.pageYOffset) {
+                    setTimeout(function () {
+                        window.scrollTo(0, 0);
+                        
+                    }, waitAfter);
+                } else {
+                    window.setTimeout(scroll, 10);
+                }
+            }
+            setTimeout(scroll, waitBefore);
+        }());
+        </script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+	// Der Button wird mit JavaScript erzeugt und vor dem Ende des body eingebunden.
+	var back_to_top_button = ['<a href="#top" class="back-to-top">Nach oben</a>'].join("");
+	$("body").append(back_to_top_button)
+
+	// Der Button wird ausgeblendet
+	$(".back-to-top").hide();
+
+	// Funktion für das Scroll-Verhalten
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) { // Wenn 100 Pixel gescrolled wurde
+				$('.back-to-top').fadeIn();
+			} else {
+				$('.back-to-top').fadeOut();
+			}
+		});
+
+		$('.back-to-top').click(function () { // Klick auf den Button
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+</script>
+
+    <nav class="sidebar">
+        <a href="#", class="logo">ARBURG</a>
+
+        <div class="menu-content">
+            <u class="menu-items">
+            <div class="menu-title">Geschichte</div>
+            <li class="item">
+                <a href="../index.html">Homepage</a>
+                <a>Geschichte</a> 
+                <a href="../facts/index.html">Über Uns</a>
+                <a href="../contact/index.html">Kontakt</a>
+            </li>
+            </u>
+        </div>
+    </nav>
+
+    
+    <p class="title-text">Geschichte</p>
+   
+    <div align="center">
+    <div id="bereich" class="fade-in">
+    <div class="fade-in">
+        <img src="	https://www.arburg.com/media/_processed_/9/8/csm_074155-Arthur-Hehl-house-1923_587ef9870a.jpg"align="left" style="float: left;" class="picture1" >
+    <div id="unterbereich">
+        <h2>1923 | Start Familienunternehmen</h2>
+        <p>Arthur Hehl ist gelernter Feinmechaniker und macht sich zunächst als Kaufmann selbständig. Für seine kleine Familie baut er ein Haus in Loßburg.</p>
+    </div>
+    </div>
+    
+       
+    </div>
+
+
+    <div id="bereich" class="fade-in" align="center">
+        <div class="fade-in" align="center">
+            <img src="https://www.arburg.com/media/_processed_/a/5/csm_073462-Hehl-surgical-instruments_3ab1d8f60a.jpg"align="left" style="float: center;" class="picture1" >
+        <div id="unterbereich" align="center">
+            <h2>1936 | Arbeit im „Fabrikle“</h2>
+            <p>Die ganze Familie arbeitet mit im „Fabrikle“, für das das Haus einen Anbau bekommt. Nachdem Arthur und seine Söhne Karl und Gerhard Hehl in den Krieg eingezogen wurden, übernimmt Mutter Maria Hehl das Geschäft.</p>
+        </div>
+        </div>
+        
+           
+        </div>
+
+        <div id="bereich" class="fade-in" align="center">
+            <div class="fade-in" align="center">
+                <img src="	https://www.arburg.com/media/_processed_/c/a/csm_074494-C1-machine-1954_d3a247b76e.jpg"align="left" style="float: center;" class="picture1" >
+            <div id="unterbereich" align="center">
+                <h2>1954 | Erste Spritzgießmaschine</h2>
+                <p>1954 entwickelt Karl Hehl die erste kleine Spritzgießmaschine für den Eigenbedarf, um damit Steckkontakte der Blitzlichtgeräte zu umspritzen. Die Kunststoff-Isolation schützt vor Korrosion.</p>
+            </div>
+            </div>
+
+               
+            </div>
+
+                        
+            <div id="bereich" class="fade-in" align="center">
+                <div class="fade-in" align="center">
+                    <img src="https://www.arburg.com/media/_processed_/f/a/csm_074298-modular-ALLROUNDER_c9662b4b63.jpg"align="left" style="float: center;" class="picture1" >
+                <div id="unterbereich" align="center">
+                    <h2>1961 | ALLROUNDER Prinzip</h2>
+                    <p>Bereits 1961 hat ARBURG die innovative Idee, eine Spritzgießmaschine mit schwenkbarer Schließ- und umsteckbarer Spritzeinheit zu konstruieren: Die ALLROUNDER Idee ist geboren.</p>
+                </div>
+                </div>
+            </div>
+
+            <div id="bereich" class="fade-in" align="center">
+                <div class="fade-in" align="center">
+                    <img src="	https://www.arburg.com/media/_processed_/f/2/csm_186016-ARBURG-France_366087e47c.jpg"align="left" style="float: center;" class="picture1" >
+                <div id="unterbereich" align="center">
+                    <h2>1981 | Erste Auslandsorganisation</h2>
+                    <p>In Frankreich wird die erste internationale ARBURG Vertriebsgesellschaft gegründet. Heute kümmern sich unsere Mitarbeitenden direkt vor Ort um eine erstklassige Betreuung – in rund 100 Ländern weltweit.</p>
+                </div>
+                </div>
+            </div>
+
+            <div id="bereich" class="fade-in" align="center">
+                <div class="fade-in" align="center">
+                    <img src="https://www.arburg.com/media/_processed_/6/7/csm_070314-aerial-view-Lossburg-1988_60e38a20fe.jpg"align="left" style="float: center;" class="picture1" >
+                <div id="unterbereich" align="center">
+                    <h2>1988 | Über 1.000 Mitarbeitende</h2>
+                    <p>Bei ARBURG sind erstmals über 1.000 Mitarbeitende beschäftigt. Auch beim Bau wird ein Meilenstein erreicht – das Werksgelände ist inzwischen über 100.000 m² groß.</p>
+                </div>
+                </div>
+            </div>
+            <div id="bereich" class="fade-in" align="center">
+                <div class="fade-in" align="center">
+                    <img src="	https://www.arburg.com/media/_processed_/a/a/csm_091257-Managing-Partners-2005_c042bff440.jpg"align="left" style="float: center;" class="picture1" >
+                <div id="unterbereich" align="center">
+                    <h2>2005 | Generationswechsel</h2>
+                    <p>Mit Juliane Hehl, Renate Keinath und Michael Hehl übernimmt 2005 die dritte Generation der Eigentümer-Familien die Führung des Unternehmens (v. r.).</p>
+                </div>
+                </div>
+            
+            </div>
+            <div id="bereich" class="fade-in" align="center">
+                <div class="fade-in" align="center">
+                    <img src="https://www.arburg.com/media/_processed_/b/1/csm_080148-Karl-Hehl_8f98a8c0ac.jpg"align="left" style="float: center;" class="picture1" >
+                <div id="unterbereich" align="center">
+                    <h2>2010 | Tod von Karl Hehl</h2>
+                    <p>2010 stirbt Seniorchef Karl Hehl mit 87 Jahren. Als technischer Kopf hat er das Unternehmen mehr als sechs Jahrzehnte lang geprägt und ARBURG mit seinem Bruder Eugen an die Weltspitze der Spritzgießtechnik geführt.</p>
+                </div>
+                </div>
+            </div>
+                <div id="bereich" class="fade-in" align="center">
+                    <div class="fade-in" align="center">
+                        <img src="https://www.arburg.com/media/_processed_/d/1/csm_091872-freeformer-K2013_857325ef47.jpg"align="left" style="float: center;" class="picture1" >
+                    <div id="unterbereich" align="center">
+                        <h2>2013 | ARBURG Kunststoff-Freiformen</h2>
+                        <p>Der freeformer und das ARBURG Kunststoff-Freiformen (AKF) feiern Weltpremiere. Der industrielle 3D-Drucker erschließt ganz neue Möglichkeiten in der additiven Fertigung: Standard-Kunststoffgranulate verarbeitet er werkzeuglos zu Funktions-Bauteilen.</p>
+                    </div>
+                    </div>
+            </div>
+            <div id="bereich" class="fade-in" align="center">
+                <div class="fade-in" align="center">
+                    <img src="	https://www.arburg.com/media/_processed_/5/9/csm_184473-anniversary-days-2023_ad701fb092.jpg"align="left" style="float: center;" class="picture1" >
+                <div id="unterbereich" align="center">
+                    <h2>2023 | 100-Jahr-Feier</h2>
+                    <p>2023 ist das Jahr des 100-jährigen Bestehens des Familienunternehmens. Vom „Fabrikle“ zum weltweit führenden Maschinenhersteller für die Kunststoffverarbeitung. Sein großartiges Jubiläum feiert ARBURG an seinen Standorten weltweit.</p>
+                </div>
+                </div>
+        </div>
+        <div>
+            <h2>FILM</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pKGBDd7XJQ8?si=RieDDJQ4JwQSdNwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+</body>
+
+<footer> <a href="file:///C:/Users/ITP01/Desktop/website/contact/index.html">Kontakt</a>
+    <a href="file:///C:/Users/ITP01/Desktop/website/games/snake.html#">Impresum</a>
+    <a href="https://www.arburg.com/de/de/datenschutz/">Datenschutz</a>
+    <p>© 2023 by Nico</p>
+</footer>
+</html>

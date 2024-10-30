@@ -1,0 +1,308 @@
+body {
+    background-color: #121212;
+  }
+  h2 {
+    color: #04ac84;
+  }
+  p {
+    color: white;
+  }
+
+.logocenter { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.sidebar {
+    height: 90%;
+    width: 97.5%;
+    background: #282828;
+    padding: 15px;
+    border-radius: 18px;
+    font-size: 18px;
+  }
+  
+  .logo {
+    font-size:  25px;
+    color: #ffff;
+    align-items: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    
+  
+  }
+.menu-title {
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+}
+
+
+/* unvisited link */
+a:link {
+color: #04ac84;
+}
+/* visited link */
+a:visited {
+color: #04ac84;
+}
+/* mouse over link */
+a:hover {
+color: white;
+}
+/* selected link */
+a:active {
+color: #04ac84;
+}
+
+.title-text {
+    
+	text-align: center;
+	animation: textwelle 3s;
+	font-size: 60px;
+    color: white;
+  
+}
+
+@keyframes textwelle {
+	0% {
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	70% {
+		transform: scale(1.25);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  .back-to-top {
+    background: #282828;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    z-index: 100;
+    border-radius: 20px;
+  }
+  .picture1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 20%;
+    
+  }
+
+  footer {
+    position: fixed;
+    padding: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #282828;
+    border-color: #282828;
+  }
+  
+  footer p {
+    float: right;
+    margin: 0;
+  }
+
+  #counter {
+    font-family: monospace;
+    margin: 100;
+    text-align: center;
+    color: #04ac84;
+    letter-spacing: 3px;
+    font-size: 80px;
+  
+  }
+  @keyframes bg {
+    0% {
+      background-size: 0% 0%;
+    }
+  }
+  #counter i:before {
+    content: "0";
+    animation: units 0.1s linear forwards;
+    animation-iteration-count: 10;
+  }
+  @keyframes units {
+    0% {
+      content: "0";
+    }
+    10% {
+      content: "1";
+    }
+    20% {
+      content: "2";
+    }
+    30% {
+      content: "3";
+    }
+    40% {
+      content: "4";
+    }
+    50% {
+      content: "5";
+    }
+    60% {
+      content: "6";
+    }
+    70% {
+      content: "7";
+    }
+    80% {
+      content: "8";
+    }
+    90% {
+      content: "9";
+    }
+    100% {
+      content: "0";
+    }
+  }
+  
+  #counter b:before {
+    content: "0";
+    animation: tens 1s linear forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes tens {
+    0% {
+      content: "0";
+    }
+    9% {
+      content: "0";
+    }
+    10% {
+      content: "1";
+    }
+    19% {
+      content: "1";
+    }
+    20% {
+      content: "2";
+    }
+    29% {
+      content: "2";
+    }
+    30% {
+      content: "3";
+    }
+    39% {
+      content: "3";
+    }
+    40% {
+      content: "4";
+    }
+    49% {
+      content: "4";
+    }
+    50% {
+      content: "5";
+    }
+    59% {
+      content: "5";
+    }
+    60% {
+      content: "6";
+    }
+    69% {
+      content: "6";
+    }
+    70% {
+      content: "7";
+    }
+    79% {
+      content: "7";
+    }
+    80% {
+      content: "8";
+    }
+    89% {
+      content: "8";
+    }
+    90% {
+      content: "9";
+    }
+    99% {
+      content: "9";
+    }
+    100% {
+      content: "0";
+    }
+  }
+  
+  #counter span:before {
+    content: "0";
+    animation: hundreds 1s linear forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes hundreds {
+    0% {
+      content: "0";
+    }
+    99% {
+      content: "0";
+    }
+    100% {
+      content: "1";
+    }
+  }
+  
+  #bereich {
+    background-color: #04ac84;
+    width: 600px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+#unterbereich {
+  background-color: #404040;
+  width: 600px;
+  height: 120px;
+  border-radius: 20px;
+}
